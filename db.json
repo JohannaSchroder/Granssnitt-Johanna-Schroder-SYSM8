@@ -1,0 +1,939 @@
+{
+  "menu": {
+    "categories": [
+      {
+        "name": "Förrätter",
+        "items": [
+          {
+            "id": 1,
+            "name": "Kryptonit-Krutonger",
+            "description": "krispiga vitlökskrutonger med dipp",
+            "price": 49,
+            "image": "bilder/KryptonitKrutonger.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Gamma Grönsaksstavar",
+            "description": "krispiga grönsaker med grön superdipp",
+            "price": 39,
+            "image": "bilder/GammaGrönsaksstavar.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Flash Fries",
+            "description": "snabbfriterade sötpotatispommes med spicy aioli",
+            "price": 49,
+            "image": "bilder/FlashFries.jpg"
+          },
+          {
+            "id": 4,
+            "name": "The Sidekick Sliders",
+            "description": "mini-burgare med chili och ost",
+            "price": 79,
+            "image": "bilder/TheSidekickSliders.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Huvudrätter",
+        "items": [
+          {
+            "id": 5,
+            "name": "Burger of Justice",
+            "description": "klassisk cheeseburgare med cape-formad ost",
+            "price": 159,
+            "image": "bilder/BurgerofJustice.jpeg"
+          },
+          {
+            "id": 6,
+            "name": "Vegan Vortex",
+            "description": "vegansk wrap som smakar som en smakexplosion",
+            "price": 129,
+            "image": "bilder/VeganVortex.jpg"
+          },
+          {
+            "id": 7,
+            "name": "Captain Crunch Chicken",
+            "description": "pankofriterad kyckling med hemlig sås",
+            "price": 149,
+            "image": "bilder/CaptainCrunchChicken.jpg"
+          },
+          {
+            "id": 8,
+            "name": "The Hero Bowl",
+            "description": "poke bowl med superingredienser",
+            "price": 149,
+            "image": "bilder/TheHeroBowl.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Efterrätter",
+        "items": [
+          {
+            "id": 9,
+            "name": "Cosmic Cheesecake",
+            "description": "färgglad cheesecake med hallonswirl",
+            "price": 69,
+            "image": "bilder/CosmicCheesecake.jpg"
+          },
+          {
+            "id": 10,
+            "name": "Secret Identity Sundae",
+            "description": "klassisk glass med en oväntad twist",
+            "price": 59,
+            "image": "bilder/SecretIdentitySundae.jpg"
+          },
+          {
+            "id": 11,
+            "name": "Atomic Brownie Bite",
+            "description": "chokladbrownie med karamellkärna",
+            "price": 69,
+            "image": "bilder/AtomicBrownieBite.jpg"
+          },
+          {
+            "id": 12,
+            "name": "Planet Pops",
+            "description": "glasspinnar i neonfärger, formade som planeter",
+            "price": 39,
+            "image": "bilder/PlanetPops.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Drycker",
+        "items": [
+          {
+            "id": 13,
+            "name": "InvisiCola",
+            "description": "klassisk cola med osynlig bismak (hint av vanilj)",
+            "price": 29,
+            "image": "bilder/InvisiCola.jpg"
+          },
+          {
+            "id": 14,
+            "name": "Radioactive Raspberry",
+            "description": "bubbelvatten med stark hallonsmak",
+            "price": 29,
+            "image": "bilder/RadioactiveRaspberry.jpg"
+          },
+          {
+            "id": 15,
+            "name": "The Milkshake Marvel",
+            "description": "retro milkshake med jordgubbsmak",
+            "price": 49,
+            "image": "bilder/TheMilkshakeMarvel.jpg"
+          },
+          {
+            "id": 16,
+            "name": "The Super Serum",
+            "description": "energidryck med hallon & lime",
+            "price": 49,
+            "image": "bilder/TheSuperSerum.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "orders": [
+    {
+      "id": "a73c",
+      "customer": {
+        "name": "sdg",
+        "address": "sdf",
+        "phone": "070528",
+        "email": "dsfs@sdfgs.se"
+      },
+      "message": "",
+      "paymentMethod": "card",
+      "swishPhone": null,
+      "cardInfo": {
+        "cardNumber": "1456145424574221",
+        "expiry": "1226",
+        "cvc": "123"
+      },
+      "items": [
+        {
+          "id": 4,
+          "name": "The Sidekick Sliders",
+          "price": 79,
+          "quantity": 1
+        }
+      ],
+      "total": 79,
+      "date": "2025-06-01T14:29:02.360Z"
+    },
+    {
+      "id": "0c08",
+      "customer": {
+        "name": "f",
+        "address": "df",
+        "phone": "34",
+        "email": "df@fdg.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "071332485",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 9,
+          "name": "Cosmic Cheesecake",
+          "price": 69,
+          "quantity": 2
+        },
+        {
+          "id": 10,
+          "name": "Secret Identity Sundae",
+          "price": 59,
+          "quantity": 2
+        }
+      ],
+      "total": 256,
+      "date": "2025-06-01T15:01:53.668Z"
+    },
+    {
+      "id": "766a",
+      "customer": {
+        "name": "sd",
+        "address": "df",
+        "phone": "32423",
+        "email": "daf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "4534",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:05:00.232Z"
+    },
+    {
+      "id": "2d16",
+      "customer": {
+        "name": "asd",
+        "address": "asd",
+        "phone": "3242",
+        "email": "gsdg@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "2424545",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 5,
+          "name": "Burger of Justice",
+          "price": 159,
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "name": "Vegan Vortex",
+          "price": 129,
+          "quantity": 1
+        }
+      ],
+      "total": 288,
+      "date": "2025-06-01T15:22:35.555Z"
+    },
+    {
+      "id": "7e3a",
+      "customer": {
+        "name": "sdf",
+        "address": "sdf",
+        "phone": "23452",
+        "email": "sdf@hd.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "2342342",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 5,
+          "name": "Burger of Justice",
+          "price": 159,
+          "quantity": 2
+        },
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "name": "Vegan Vortex",
+          "price": 129,
+          "quantity": 1
+        }
+      ],
+      "total": 496,
+      "date": "2025-06-01T15:25:44.726Z"
+    },
+    {
+      "id": "9dc4",
+      "customer": {
+        "name": "23423",
+        "address": "324234",
+        "phone": "324234",
+        "email": "23434@234.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "23423",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 9,
+          "name": "Cosmic Cheesecake",
+          "price": 69,
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "name": "Secret Identity Sundae",
+          "price": 59,
+          "quantity": 1
+        }
+      ],
+      "total": 128,
+      "date": "2025-06-01T15:30:42.780Z"
+    },
+    {
+      "id": "9697",
+      "customer": {
+        "name": "34w4",
+        "address": "34234",
+        "phone": "324234",
+        "email": "2342@wwer.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "324234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:35:56.471Z"
+    },
+    {
+      "id": "7e76",
+      "customer": {
+        "name": "wqe",
+        "address": "wer",
+        "phone": "234324",
+        "email": "dfsf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "134234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:37:20.214Z"
+    },
+    {
+      "id": "c605",
+      "customer": {
+        "name": "fgsdf",
+        "address": "dsf",
+        "phone": "4545",
+        "email": "fgsdfg@dg.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "45245",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:38:22.721Z"
+    },
+    {
+      "id": "7e0d",
+      "customer": {
+        "name": "eadf",
+        "address": "sdfsdf",
+        "phone": "34234",
+        "email": "ewfs@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234324",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:39:51.044Z"
+    },
+    {
+      "id": "b910",
+      "customer": {
+        "name": "2345245",
+        "address": "2342",
+        "phone": "324234",
+        "email": "3242@324.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:46:37.310Z"
+    },
+    {
+      "id": "0ef8",
+      "customer": {
+        "name": "dfsdf",
+        "address": "dsfsdf",
+        "phone": "34234",
+        "email": "df@df.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "34234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:51:29.845Z"
+    },
+    {
+      "id": "6314",
+      "customer": {
+        "name": "dfsdf",
+        "address": "sdfsdf",
+        "phone": "342234",
+        "email": "sdfsf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "134234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:52:10.592Z"
+    },
+    {
+      "id": "af90",
+      "customer": {
+        "name": "dfsdf",
+        "address": "sdfsdf",
+        "phone": "345345",
+        "email": "dfsdf@sdfs.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "45345",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T15:55:19.089Z"
+    },
+    {
+      "id": "ddf2",
+      "customer": {
+        "name": "dfgd",
+        "address": "dfgdfg",
+        "phone": "34534",
+        "email": "erwet@s.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "2354245",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 13,
+          "name": "InvisiCola",
+          "price": 29,
+          "quantity": 1
+        },
+        {
+          "id": 14,
+          "name": "Radioactive Raspberry",
+          "price": 29,
+          "quantity": 1
+        }
+      ],
+      "total": 58,
+      "date": "2025-06-01T18:20:19.978Z"
+    },
+    {
+      "id": "1ada",
+      "customer": {
+        "name": "adsfsdf",
+        "address": "sdfsdf",
+        "phone": "234234",
+        "email": "dfsdf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "254545",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T18:24:47.828Z"
+    },
+    {
+      "id": "85f8",
+      "customer": {
+        "name": "sdf",
+        "address": "sdf",
+        "phone": "sdf",
+        "email": "sdf@sdg.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "fsdf",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T18:37:00.870Z"
+    },
+    {
+      "id": "2061",
+      "customer": {
+        "name": "asdasd",
+        "address": "asdad",
+        "phone": "324234",
+        "email": "sdfdf@dfsd.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T18:42:53.600Z"
+    },
+    {
+      "id": "f460",
+      "customer": {
+        "name": "sdf",
+        "address": "dsf",
+        "phone": "32423",
+        "email": "dfsd@jsdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234324",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T18:45:57.519Z"
+    },
+    {
+      "id": "8995",
+      "customer": {
+        "name": "fgdfg",
+        "address": "dfgdgf",
+        "phone": "45345",
+        "email": "fgdfg@dsf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "45345",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T18:52:20.420Z"
+    },
+    {
+      "id": "5b69",
+      "customer": {
+        "name": "fgdfg",
+        "address": "dfgdfg",
+        "phone": "3345",
+        "email": "dsf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "345345",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T19:09:05.163Z"
+    },
+    {
+      "id": "aa07",
+      "customer": {
+        "name": "sdf",
+        "address": "sdfsdf",
+        "phone": "324243",
+        "email": "dfdf@adfs"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "34234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T19:11:26.351Z"
+    },
+    {
+      "id": "6a30",
+      "customer": {
+        "name": "asdasd",
+        "address": "asd",
+        "phone": "324234",
+        "email": "dfsdf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "324234234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T19:19:22.262Z"
+    },
+    {
+      "id": "7e46",
+      "customer": {
+        "name": "dfg",
+        "address": "gf",
+        "phone": "453",
+        "email": "edsf@sdg.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T19:24:56.271Z"
+    },
+    {
+      "id": "1603",
+      "customer": {
+        "name": "sdfsdf",
+        "address": "sdf",
+        "phone": "23423",
+        "email": "dfsdf@dsf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "32424",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-01T19:30:05.379Z"
+    },
+    {
+      "id": "a3aa",
+      "customer": {
+        "name": "df",
+        "address": "sdf",
+        "phone": "234",
+        "email": "dfsdf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        }
+      ],
+      "total": 49,
+      "date": "2025-06-01T19:41:05.347Z"
+    },
+    {
+      "id": "dc7c",
+      "customer": {
+        "name": "asd",
+        "address": "asd",
+        "phone": "34234",
+        "email": "dfsdf@dfsd.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "2342342",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        }
+      ],
+      "total": 49,
+      "date": "2025-06-01T19:42:38.719Z"
+    },
+    {
+      "id": "782e",
+      "customer": {
+        "name": "df",
+        "address": "sdf",
+        "phone": "34",
+        "email": "dsfsdf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "235425",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        }
+      ],
+      "total": 49,
+      "date": "2025-06-01T19:46:13.482Z"
+    }
+  ],
+  "users": []
+}

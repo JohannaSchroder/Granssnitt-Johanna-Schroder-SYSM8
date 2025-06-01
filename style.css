@@ -1,0 +1,377 @@
+/* Grund */
+body {
+  margin: 0; /* Tar bort standardmarginalen runt hela sidan */
+  font-family: "Krub", sans-serif;
+  font-weight: 300; /* light */
+  background-color: #fefefe; /* Ljus bakgrundsfärg */
+  color: #222; /* Mörk textfärg */
+}
+
+/* Container */
+.home-container {
+  max-width: 1200px; /* Maxbredd på sidan för större skärmar */
+  margin: 0 auto; /* Centrerar containern horisontellt */
+  padding: 20px; /* Inre luft runt innehållet */
+}
+
+/* Nav-bar med logga i mitten */
+.nav-bar {
+  display: flex; /* Flexbox för layout */
+  align-items: center; /* Vertikal centrering av innehåll */
+  justify-content: space-between; /* Ikoner till vänster och höger, logga centrerad */
+  padding: 30px 40px 20px; /* Topp, sidor och botten-padding (30px top ger luft ovanför) */
+  border-bottom: 5px solid #fff2f9; /* Stor ljusrosa linje under navbar */
+  max-width: 1000px; /* Maxbredd för navbar */
+  margin: 0 auto; /* Centrerar navbar horisontellt */
+  height: 180px; /* Höjd för att rymma logga på 160px */
+  box-sizing: border-box; /* Padding och border ingår i höjd/bredd */
+  position: relative; /* För att kunna absolut-positionera loggan */
+  margin-top: 50px; /* Luft ovanför navbar */
+}
+
+/* Klickbara länkar */
+.nav-link {
+  display: flex;
+  align-items: center; /* Vertikal centrering */
+}
+
+/* ikonerna (hus och kundvagn) */
+.nav-icon {
+  width: 40px; /* Bredd på ikon */
+  height: 40px; /* Höjd på ikon */
+  cursor: pointer; /* Markören blir en pekare när man hovrar */
+}
+
+/* Loggan i mitten */
+.nav-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Centrerar texten under loggan */
+}
+
+.logo-text {
+  margin-top: 2px; /* Lite luft ovanför texten */
+  font-family: "Krub", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #222; /* Färg efter behov */
+  padding-bottom: 10px;
+}
+
+/* Bilden för loggan */
+.nav-logo-image {
+  height: 160px; /* Höjd på loggan */
+  border-radius: 16px; /* Rundade hörn */
+  object-fit: cover; /* Bilden fyller ramen utan att bli skev */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Skugga under loggan */
+}
+
+/* Menysektion (knappar för kategorier) */
+.category-nav {
+  display: flex;
+  justify-content: center; /* Centrerar knappar horisontellt */
+  gap: 15px; /* Mellanrum mellan knappar */
+  margin: 20px 0; /* Luft ovan och under knappar */
+  flex-wrap: wrap; /* Bryter knappar till ny rad om det behövs */
+}
+
+.category-nav button {
+  padding: 8px 16px; /* Inre luft i knappar */
+  font-size: 1rem; /* Textstorlek */
+  background-color: #fff2f9; /* bakgrund */
+  border: none; /* Ingen kantlinje */
+  border-radius: 6px; /* Rundade hörn på knappar */
+  font-weight: 600; /* Halvfet text */
+  cursor: pointer; /* Pekare när man hovrar */
+}
+
+.category-nav button.active {
+  background-color: #c5f7bd; /* grön bakgrund när aktiv */
+  color: black;
+}
+
+/* Sektion för menyer */
+.menu-section {
+  margin-top: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px; /* Samma sidopadding som nav-bar */
+  box-sizing: border-box;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  font-family: "Krub", sans-serif;
+  font-weight: 300; /* light */
+  background-color: #fff2f9; /* Ljusrosa bakgrund */
+  margin: 0 auto 20px auto; /* Luft under rubrik och centrerat */
+  padding: 10px 0px; /* Lite vertikal padding, ingen horisontell */
+  width: 100%; /* Full bredd inom sektionen */
+  text-align: left; /* Texten centrerad inom banderollen */
+  padding-left: 20px; /* Flyttar texten 20px in från vänster */
+}
+
+/* Grid för menyalternativ */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Fyra kolumner med lika stor bredd */
+  gap: 25px; /* Mellanrum mellan rader och kolumner */
+  list-style: none; /* Ingen punktlista */
+  padding: 0;
+  margin: 0;
+}
+
+/* Enskild menyprodukt */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* mellanrum mellan elementen */
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-image {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0; /* förhindra att bilden krymper */
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px; /* avstånd mellan namn och beskrivning */
+  flex-grow: 1; /* tar så mycket plats som möjligt */
+}
+
+.menu-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.description {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.price {
+  margin: 0 20px 0 0; /* lite luft till höger om priset */
+  font-weight: 700;
+  color: black;
+  font-size: 1rem;
+  white-space: nowrap; /* så priset inte radbryts */
+}
+
+.menu-item button {
+  padding: 8px 16px;
+  background-color: #c5f7bd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  flex-shrink: 0; /* knappen ska inte krympa */
+}
+
+/* klass för beskrivning av maten */
+.description {
+  font-size: 0.95rem; /* Lite mindre text */
+  color: #555; /* Mjuk textfärg */
+  margin-bottom: 10px; /* Luft under beskrivning */
+}
+
+/* Pris */
+.price {
+  font-weight: 700; /* Fet stil */
+  color: black;
+  font-size: 1.1rem; /* Lite större text */
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px; /* Luft ovanför footer */
+  padding-top: 20px; /* Inre luft i toppen av footer */
+  border-top: 1px solid #ddd; /* Ljus gränslinje över footer */
+  text-align: center; /* Centrerad text */
+  color: #666; /* Grå text */
+  font-size: 0.9rem; /* Mindre text */
+}
+
+/* CHECKOUT CSS */
+/* Container för checkout sidan */
+.checkout-container {
+  max-width: 600px; /* Maxbredd */
+  margin: 40px auto; /* Centrerad med luft ovanför och under */
+  padding: 20px 40px; /* Inre luft */
+  background: #fff; /* Vit bakgrund */
+  border-radius: 16px; /* Rundade hörn */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Skugga */
+  font-family: "Krub", sans-serif;
+  font-weight: 300; /* light */
+  color: #222; /* Textfärg */
+}
+
+/* Lista för varor i kundvagn */
+.cart-list {
+  list-style: none; /* Ingen punktlista */
+  padding: 0;
+  margin-bottom: 30px; /* Luft under listan */
+}
+
+/* Enskild vara i kundvagn */
+.cart-item {
+  display: flex; /* Flexbox för rad */
+  justify-content: space-between; /* Sprider ut innehåll */
+  align-items: center; /* Vertikal centrering */
+  margin-bottom: 18px; /* Luft under varje vara */
+  font-size: 18px; /* Textstorlek */
+}
+
+/* Kontroller för kvantitet */
+.quantity-controls {
+  display: flex;
+  align-items: center; /* Vertikal centrering */
+  gap: 10px; /* Mellanrum mellan knappar */
+}
+
+.quantity-controls button {
+  background-color: #c5f7bd; /* Grön bakgrund */
+  border: none;
+  color: black;
+  font-weight: 700;
+  border-radius: 6px; /* Rundade hörn */
+  width: 30px;
+  height: 30px;
+  cursor: pointer; /* Pekare */
+}
+
+/* Formulär på checkout */
+.customer-form label {
+  display: block; /* Tar upp hela raden */
+  margin-bottom: 18px; /* Luft under */
+  font-weight: 600; /* Halvfet */
+  font-size: 16px; /* Textstorlek */
+}
+
+.customer-form input,
+.customer-form textarea {
+  width: 100%; /* Fyller förälderns bredd */
+  padding: 10px 12px; /* Inre luft */
+  border: 1px solid #ccc; /* Grå kant */
+  border-radius: 8px; /* Rundade hörn */
+  font-size: 16px; /* Textstorlek */
+  margin-top: 6px; /* Luft över input */
+  font-family: "Krub", sans-serif;
+  font-weight: 300; /* light */
+}
+
+.customer-form textarea {
+  resize: vertical; /* Användaren kan ändra höjd på textarea */
+  min-height: 80px; /* Minsta höjd */
+}
+
+.customer-form input[type="radio"] {
+  width: auto; /* Normal bredd */
+  margin-right: 8px; /* Luft till höger */
+}
+
+/* Submit-knapp */
+.submit-btn {
+  background-color: #c5f7bd; /* Grön bakgrund */
+  border: none;
+  color: black; /* Vit text */
+  padding: 14px 20px; /* Inre luft */
+  font-size: 18px;
+  border-radius: 10px; /* Rundade hörn */
+  cursor: pointer; /* Pekare */
+  font-weight: 700; /* Fet */
+  margin-top: 20px; /* Luft ovanför knappen */
+  width: 100%; /* Full bredd */
+}
+
+/* Ta bort-knapp */
+.remove-btn {
+  background-color: #ec7f73; /* Röd bakgrund */
+  border: none;
+  color: white;
+  border-radius: 6px; /* Rundade hörn */
+  padding: 6px 12px; /* Inre luft */
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 15px; /* Luft till vänster */
+}
+
+/* Betalningsinformation */
+.payment-info label {
+  display: block;
+  margin-bottom: 15px; /* Luft under label */
+}
+
+.payment-info input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: "Krub", sans-serif;
+  font-weight: 300; /* light */
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+  margin: 0; /* Ta bort defaultmarginal */
+}
+
+.payment-icon {
+  width: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff2f9;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-ok-btn {
+  background-color: #a4d797;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

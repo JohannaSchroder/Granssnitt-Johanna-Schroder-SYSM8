@@ -35,10 +35,7 @@ export default {
     },
     totalPrice() {
       //räknar ut totala priset i varukorgen
-      return cart.items.reduce(
-        (sum, item) => sum + item.price * item.quantity,
-        0
-      );
+      return cart.total;
     },
   },
 
@@ -129,7 +126,7 @@ export default {
         //hämtar order-ID och annan info från servern
         const responseData = await res.json();
 
-        cart.items = [];
+        cart.items.splice(0);
         this.customer = { name: "", address: "", phone: "", email: "" };
         this.message = "";
         this.paymentMethod = "card";
@@ -175,10 +172,12 @@ export default {
           </div>
           <button @click="removeItem(item)" class="remove-btn">Ta bort</button>
         </li>
+          <li class="cart-total">
+      <h2 v-if="cartItems.length > 0" style="text-align: left;">Totalt: {{ cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0) }} kr</h2>
+  </li>
       </ul>
       <p v-else>Drone kan inte se något i din varukorg, gå till menyn och lägg till något smarrigt</p>
 
-      <h2 v-if="cartItems.length > 0">Total: {{ totalPrice }} kr</h2>
 
       <div v-if="cartItems.length > 0">
         <h2>Kundinformation</h2>
@@ -246,16 +245,6 @@ export default {
           </button>
         </form>
       </div>
-
-      <!-- popup-ruta med bekräftelse -->
-<div v-if="showModal" class="modal-overlay" @click="closeModal">
-  <div class="modal-box" @click.stop>
-    <p>{{ modalMessage }}</p>
-    <button type="button" @click="closeModal" class="modal-ok-btn">
-      Gött! Låt maten komma!
-    </button>
-  </div>
-</div>
     </div>
   `,
 };

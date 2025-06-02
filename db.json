@@ -1141,6 +1141,41 @@
       ],
       "total": 88,
       "date": "2025-06-02T10:59:58.329Z"
+    },
+    {
+      "id": "531e",
+      "customer": {
+        "name": "dfsdf",
+        "address": "sdfds",
+        "phone": "3432",
+        "email": "dfsdf@dfsdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "23424",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 4
+        },
+        {
+          "id": 4,
+          "name": "The Sidekick Sliders",
+          "price": 79,
+          "quantity": 5
+        },
+        {
+          "id": 3,
+          "name": "Flash Fries",
+          "price": 49,
+          "quantity": 1
+        }
+      ],
+      "total": 600,
+      "date": "2025-06-02T11:29:19.152Z"
     }
   ],
   "users": []

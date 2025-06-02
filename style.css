@@ -177,6 +177,13 @@ body {
   color: black;
   font-weight: 600;
   flex-shrink: 0; /* knappen ska inte krympa */
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease;
+}
+
+.menu-item button.added {
+  background-color: #4caf50;
+  color: white;
+  transform: scale(1.05);
 }
 
 /* klass för beskrivning av maten */

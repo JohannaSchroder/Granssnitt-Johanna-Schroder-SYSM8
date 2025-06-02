@@ -35,10 +35,7 @@ export default {
     },
     totalPrice() {
       //räknar ut totala priset i varukorgen
-      return cart.items.reduce(
-        (sum, item) => sum + item.price * item.quantity,
-        0
-      );
+      return cart.total;
     },
   },
 

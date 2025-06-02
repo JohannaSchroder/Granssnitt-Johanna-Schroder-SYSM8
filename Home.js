@@ -6,6 +6,7 @@ export default {
     return {
       menuCategories: [], //här sparas alla kategorier från menyn
       selectedCategory: null, //håller reda på vilken kategori som är vald (null = alla)
+      addedItems: {},
     };
   },
 
@@ -54,6 +55,12 @@ export default {
     //lägg till en vara i kundvagnen
     addToCart(item) {
       cart.addItem(item);
+
+      this.addedItems[item.id] = true;
+
+      setTimeout(() => {
+        delete this.addedItems[item.id];
+      }, 1000);
     },
   },
 
@@ -101,7 +108,13 @@ export default {
 
           <!-- pris + knapp för att lägga till -->
           <p class="price">{{ item.price }} kr</p>
-          <button @click="addToCart(item)">Lägg till i varukorg</button>
+          <button
+  :data-id="item.id"
+  @click="addToCart(item)"
+  :class="{ added: addedItems[item.id] }"
+>
+  {{ addedItems[item.id] ? "🛸 Tillagd i varukorgen" : "Lägg till i varukorg" }}
+</button>
         </li>
       </ul>
     </section>

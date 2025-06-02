@@ -1002,6 +1002,145 @@
       ],
       "total": 49,
       "date": "2025-06-02T06:35:23.469Z"
+    },
+    {
+      "id": "5f80",
+      "customer": {
+        "name": "sdf",
+        "address": "sdf",
+        "phone": "23432",
+        "email": "dfsdf@wdg.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "342342",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 137,
+      "date": "2025-06-02T10:42:32.437Z"
+    },
+    {
+      "id": "b662",
+      "customer": {
+        "name": "34534",
+        "address": "45345",
+        "phone": "345345",
+        "email": "43535@er.e"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234324",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-02T10:45:21.124Z"
+    },
+    {
+      "id": "7bbc",
+      "customer": {
+        "name": "dsfsdf",
+        "address": "sdfsdf",
+        "phone": "2343",
+        "email": "dsdf@df.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "234234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-02T10:49:38.556Z"
+    },
+    {
+      "id": "1576",
+      "customer": {
+        "name": "sdf",
+        "address": "sdf",
+        "phone": "234",
+        "email": "dgf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "34234",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        }
+      ],
+      "total": 49,
+      "date": "2025-06-02T10:55:42.706Z"
+    },
+    {
+      "id": "d2da",
+      "customer": {
+        "name": "sdfsdf",
+        "address": "sdffs",
+        "phone": "3424",
+        "email": "sdf@sdf.se"
+      },
+      "message": "",
+      "paymentMethod": "swish",
+      "swishPhone": "23424",
+      "cardInfo": null,
+      "items": [
+        {
+          "id": 1,
+          "name": "Kryptonit-Krutonger",
+          "price": 49,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Gamma Grönsaksstavar",
+          "price": 39,
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "date": "2025-06-02T10:59:58.329Z"
     }
   ],
   "users": []

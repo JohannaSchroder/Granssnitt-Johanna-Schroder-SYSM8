@@ -37,10 +37,10 @@ export const cart = reactive({
   },
 
   //här räknas det totala priset på allt i varukorgen
-  get total() {
+  /*get total() {
     return this.items.reduce(
       (sum, item) => sum + item.price * item.quantity,
       0
     );
-  },
+  },*/
 });

@@ -113,7 +113,7 @@ export default {
   @click="addToCart(item)"
   :class="{ added: addedItems[item.id] }"
 >
-  {{ addedItems[item.id] ? "🛸 Tillagd i varukorgen" : "Lägg till i varukorg" }}
+  {{ addedItems[item.id] ? "💥 Tillagd i varukorgen" : "Lägg till i varukorg" }}
 </button>
         </li>
       </ul>

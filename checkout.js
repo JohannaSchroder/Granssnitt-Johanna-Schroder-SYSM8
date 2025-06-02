@@ -35,21 +35,24 @@ export default {
     },
     totalPrice() {
       //räknar ut totala priset i varukorgen
-      return cart.total;
+      return cart.items.reduce(
+        (sum, item) => sum + item.price * item.quantity,
+        0
+      );
     },
   },
 
   methods: {
     //ökar antalet av en vara
     increaseQty(item) {
-      item.quantity += 1;
+      cart.updateQuantity(item.id, item.quantity + 1);
       this.refreshCart();
     },
 
     //minskar antalet, eller tar bort varan helt om det är 1 kvar
     decreaseQty(item) {
       if (item.quantity > 1) {
-        item.quantity -= 1;
+        cart.updateQuantity(item.id, item.quantity - 1);
       } else {
         this.removeItem(item);
       }
@@ -66,20 +69,6 @@ export default {
     //måste jag ha kvar denna?!
     refreshCart() {
       this.$forceUpdate();
-    },
-
-    //när bekräftelserutan stängs så återställs allt
-    closeModal() {
-      console.log("Stänger modal...");
-      this.showModal = false;
-      cart.items = []; //tömmer varukorgen
-      this.customer = { name: "", address: "", phone: "", email: "" }; //tömmer kundinfo
-      this.message = "";
-      this.paymentMethod = "card";
-      this.swishPhone = "";
-      this.cardInfo = { cardNumber: "", expiry: "", cvc: "" };
-
-      this.$router.push("/"); //skickar användaren tillbaka till startsidan
     },
 
     //när man klickar på "Skicka beställning"
@@ -140,22 +129,27 @@ export default {
         //hämtar order-ID och annan info från servern
         const responseData = await res.json();
 
-        //visar bekräftelse till användaren i en popup-ruta
-        this.modalMessage = `🛸 Uppdrag mottaget!
-            Din beställning är nu på väg.
-            Order-ID: ${responseData.id}
-            Betalning med: ${order.paymentMethod}, Totalt: ${order.total} kr
-            Håll utkik i skyn!`;
-        console.log("Innan showModal sätts:", this.showModal);
-        this.showModal = true;
-        console.log("Efter showModal sätts:", this.showModal);
-        //this.showModal = true; //visar själva rutan med meddelandet
-        console.log("Visar modal:", this.showModal);
+        cart.items = [];
+        this.customer = { name: "", address: "", phone: "", email: "" };
+        this.message = "";
+        this.paymentMethod = "card";
+        this.swishPhone = "";
+        this.cardInfo = { cardNumber: "", expiry: "", cvc: "" };
+
+        // Navigera till orderbekräftelse-sidan och skicka med order-ID och total
+        this.$router.push({
+          path: "/order-confirmation",
+          query: {
+            orderId: responseData.id,
+            total: order.total,
+            paymentMethod: order.paymentMethod,
+          },
+        });
       } catch (error) {
-        alert("Kunde inte skicka beställningen. Försök igen senare."); //visar felmeddelande till användaren
-        console.error("Fel vid beställning:", error); //skriver ut felet i webbläsarens konsol
+        alert("Kunde inte skicka beställningen. Försök igen senare.");
+        console.error("Fel vid beställning:", error);
       } finally {
-        this.submitting = false; //stänger av "skickar..."-statusen oavsett om det lyckades eller inte
+        this.submitting = false;
       }
     },
   },
@@ -209,14 +203,6 @@ export default {
           <label>
             Meddelande till Drone:
             <textarea v-model="message" placeholder="Skriv något om din beställning..."></textarea>
-
-            <button @click="showModal = true">Visa Modal Test</button>
-<div v-if="showModal" class="modal-overlay" @click.stop>
-  <div class="modal-box" @click.stop>
-    <p>Testmodal</p>
-    <button @click="closeModal">Stäng</button>
-  </div>
-</div>
           </label>
 
           <h2>Betalningsmetod</h2>

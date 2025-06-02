@@ -1,6 +1,7 @@
 //hämtar in två sidor: startsidan och kassan
 import Home from "./Home.js";
 import Checkout from "./checkout.js";
+import OrderConfirmation from "./orderConfirmation.js";
 
 //använder Vue Router för att kunna byta sida i appen
 const { createRouter, createWebHashHistory } = VueRouter;
@@ -9,6 +10,7 @@ const { createRouter, createWebHashHistory } = VueRouter;
 const routes = [
   { path: "/", component: Home },
   { path: "/checkout", component: Checkout },
+  { path: "/order-confirmation", component: OrderConfirmation },
 ];
 
 //skapar en router som håller koll på sidbyten

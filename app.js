@@ -1,6 +1,11 @@
 //navigationsfältet
+import Footer from "./footer.js";
+//importerar footer
 
 export default {
+  components: {
+    Footer,
+  },
   template: `
     <div>
       <!-- navigationsfältet högst upp på sidan -->
@@ -32,6 +37,7 @@ export default {
       <main>
         <router-view></router-view>
       </main>
+      <Footer />
     </div>
   `,
 };

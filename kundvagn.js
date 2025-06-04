@@ -3,7 +3,7 @@ import { reactive } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
 //skapar en reaktiv varukorg som man kan använda överallt i appen
 export const cart = reactive({
-  items: [], // Här sparas alla produkter som jag lägger i varukorgen
+  items: [], //här sparas alla produkter som jag lägger i varukorgen
 
   //när man lägger till en produkt i varukorgen:
   addItem(product) {

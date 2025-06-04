@@ -1,4 +1,4 @@
-//hämtar in två sidor: startsidan och kassan
+//hämtar in två sidor: startsidan, kassan och bekräftelsesidan
 import Home from "./Home.js";
 import Checkout from "./checkout.js";
 import OrderConfirmation from "./orderConfirmation.js";

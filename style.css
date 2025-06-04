@@ -200,21 +200,11 @@ body {
   font-size: 1.1rem; /* Lite större text */
 }
 
-/* Footer */
-.footer {
-  margin-top: 60px; /* Luft ovanför footer */
-  padding-top: 20px; /* Inre luft i toppen av footer */
-  border-top: 1px solid #ddd; /* Ljus gränslinje över footer */
-  text-align: center; /* Centrerad text */
-  color: #666; /* Grå text */
-  font-size: 0.9rem; /* Mindre text */
-}
-
 /* CHECKOUT CSS */
 /* Container för checkout sidan */
 .checkout-container {
   max-width: 600px; /* Maxbredd */
-  margin: 40px auto; /* Centrerad med luft ovanför och under */
+  margin: 100px auto; /* Centrerad med luft ovanför och under */
   padding: 20px 40px; /* Inre luft */
   background: #fff; /* Vit bakgrund */
   border-radius: 16px; /* Rundade hörn */
@@ -222,6 +212,7 @@ body {
   font-family: "Krub", sans-serif;
   font-weight: 300; /* light */
   color: #222; /* Textfärg */
+  margin-bottom: 200px;
 }
 
 /* Lista för varor i kundvagn */
@@ -399,4 +390,25 @@ body {
   border-top: 2px solid #ccc;
   margin-top: 15px;
   text-align: right;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #fefefe; /* Ljusrosa bakgrund för att matcha sidan */
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+  border-top: 2px solid #fff2f9; /* matcha den gröna färgen */
+  font-weight: 400;
+  font-family: "Krub", sans-serif;
+  margin-top: 3rem;
+}
+.footer a {
+  color: #4caf50; /* grön länkfärg */
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer a:hover {
+  text-decoration: underline;
 }

@@ -63,7 +63,7 @@ export default {
     },
 
     //tvingar Vue att uppdatera visningen
-    //måste jag ha kvar denna?!
+    //måste ha denna för annars uppdateras inte datan när man trycker på +, -, "ta bort"
     refreshCart() {
       this.$forceUpdate();
     },

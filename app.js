@@ -1,4 +1,5 @@
 //navigationsfältet
+
 import Footer from "./footer.js";
 //importerar footer
 
